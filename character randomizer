@@ -1,0 +1,122 @@
+#bleach brave souls 3 chrachters picking code 
+'''
+what i want from this code is to be able 
+to pick 3 characters from my bleach brave souls characters list and links as well as equipemts
+'''
+import random 
+characters = [
+    "Aaroniero Arruruerie",
+    "Abirama Redder",
+    "Akon",
+    "Äs Nödt",
+    "Asguiaro Ebern",
+    "Ashido Kanō",
+    "Askin Nakk Le Vaar",
+    "Aura Michibane",
+    "Bambietta Basterbine",
+    "Baraggan Louisenbairn",
+    "Bazz-B",
+    "Byakuya Kuchiki",
+    "Candice Catnipp",
+    "Cang Du",
+    "Charlotte Chuhlhourne",
+    "Chojiro Sasakibe",
+    "Cirucci Sanderwicci",
+    "Coyote Starrk",
+    "Don Kanonji",
+    "Dordoni Alessandro Del Socaccio",
+    "Ganju Shiba",
+    "Gantenbainne Mosqueda",
+    "Genryusai Shigekuni Yamamoto",
+    "Gin Ichimaru",
+    "Giselle Gewelle",
+    "Gremmy Thoumeaux",
+    "Grimmjow Jaegerjaques",
+    "Hachigen Ushoda",
+    "Hanataro Yamada",
+    "Hiyori Sarugaki",
+    "Ichibe Hyosube",
+    "Ichigo Kurosaki",
+    "Ikkaku Madarame",
+    "Isane Kotetsu",
+    "Isshin Kurosaki",
+    "Izuru Kira",
+    "Jackie Tristan",
+    "Jugram Haschwalth",
+    "Jushiro Ukitake",
+    "Kaname Tosen",
+    "Kaien Shiba",
+    "Kensei Muguruma",
+    "Kenpachi Azashiro",
+    "Kenpachi Kuruyashiki",
+    "Kenpachi Zaraki",
+    "Kisuke Urahara",
+    "Kirio Hikifune",
+    "Kugo Ginjo",
+    "Kukaku Shiba",
+    "Lille Barro",
+    "Liltotto Lamperd",
+    "Lisa Yadomaru",
+    "Loly Aivirrne",
+    "Luppi Antenor",
+    "Love Aikawa",
+    "Masaki Kurosaki",
+    "Mayuri Kurotsuchi",
+    "Meninas McAllon",
+    "Momo Hinamori",
+    "Moeh Shishigawara",
+    "Nanao Ise",
+    "Nelliel Tu Odelschwanck",
+    "Nemu Kurotsuchi",
+    "Nnoitora Gilga",
+    "Oh-Etsu Nimaiya",
+    "Orihime Inoue",
+    "PePe Waccabrada",
+    "Pesche Guatiche",
+    "Quilge Opie",
+    "Rangiku Matsumoto",
+    "Renji Abarai",
+    "Retsu Unohana",
+    "Riruka Dokugamine",
+    "Rojuro Otoribashi",
+    "Rukia Kuchiki",
+    "Ryuken Ishida",
+    "Sajin Komamura",
+    "Senjumaru Shutara",
+    "Shinji Hirako",
+    "Shukuro Tsukishima",
+    "Shunsui Kyoraku",
+    "Soi Fon",
+    "Sosuke Aizen",
+    "Szayelaporro Grantz",
+    "Tessai Tsukabishi",
+    "Tesla Lindocruz",
+    "Tetsuzaemon Iba",
+    "Tier Halibel",
+    "Tokinada Tsunayashiro",
+    "Toshiro Hitsugaya",
+    "Uryu Ishida",
+    "Yachiru Kusajishi",
+    "Yasutora Sado",
+    "Yhwach",
+    "Yoruichi Shihoin",
+    "Yukio Hans Vorarlberna",
+    "Yumichika Ayasegawa",
+    "Zangetsu",
+    "Zommari Rureaux",
+]
+my_team=[]
+#print(choices(characters))
+while len(my_team) < 3 :
+ candidate = random.choice(characters)
+ if candidate in my_team:
+  continue 
+ user_response= input(f"randomly picked: {candidate}. do you have this character? yes or no \n ")
+ if user_response.lower()=="yes":
+  my_team.append(candidate)
+  print(f"great! {candidate} added to your team. ({len(my_team)}/3)")
+ else:
+  print("no problem, picking a different character...")
+print("\nyour comfirmed team is:")
+for name  in my_team:
+  print(f"-{name}")
