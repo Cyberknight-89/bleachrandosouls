@@ -1,0 +1,60 @@
+#now i will be making the code for equipment selcetions 
+# since idk the names of each ones and doubt anyone co i will need to learn how to impliment image
+
+import random
+attack= [
+        "Gokon Tekko",
+        "Pupples Dispenser",
+        "Gold Pupples Dispenser",
+        "Hollow Bait",
+    ]
+spiritual_pressure= [
+        "Shinten",
+        "Yuki Dispenser",
+        "Gold Yuki Dispenser",
+        "Fortification Pill",
+    ]
+
+stamina= [
+        "Cookie",
+        "Enraku",
+        "Captain's Robe",
+        "Incomplete Hogyoku",
+        "Isshin's Charm",
+    ]
+
+defense= [
+        "Cape",
+    ]
+
+focus= [
+        "Memory Replacement",
+    ]
+
+special= [
+        "Tenshintai",
+        "Hojiku-Zai",
+        "Chappy Dispenser",
+        "Gold Chappy Dispenser",
+        "Shihoin Shield",
+        "Spirit Core",
+    ]
+
+
+ 
+my_equipment=[]
+#print(choices(characters))
+while len(my_equipment)< 3 :
+ candidate = random.choice[attack, focus, spiritual_pressure, special, defense, stamina]
+ if candidate in candidate:
+  continue 
+ user_response= input(f"randomly picked: {candidate}. do you have this equipment? yes or no \n ")
+ if user_response.lower()=="yes":
+  candidate.append(candidate)
+  print(f"great! {candidate} added to your list. ({len(candidate)}/3)")
+ else:
+  print("no problem, picking a different equipment...")
+print("\nyour equipments are:")
+for my_equipment in candidate:
+  print(f"-{my_equipment}")
+
