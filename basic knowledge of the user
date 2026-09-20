@@ -1,0 +1,10 @@
+#okay im remaking my brave soul randomizer but im improving it
+#this part is self explanatory it just ask for basic stuffs about
+##the users acount then store them.
+#author cyberknight
+user_name=input("What is your user name: ")
+player_rank=int(input("what is your player rank?: "))
+orb_count=int(input("How much orbs do you have: "))
+coin_num=int(input("curent amout of coins: "))
+soul_ticket_num=int(input("current amount of souls ticket: "))
+print(f"player info:\nName: {user_name}\nRank: {player_rank}\nOrbs: {orb_count}\nCoins: {coin_num}\nTickets: {soul_ticket_num}")
