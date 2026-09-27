@@ -1,7 +1,7 @@
 #this code just take input from user and ask if he have a character keep going until 3/3
 
 import random
-from data.character import characters
+from character.py import characters
 my_team=[]
 while len(my_team) < 3 :
     candidate=random.choice(characters)
