@@ -1,3 +1,5 @@
+my_team=[]
+import random
 characters = [
     "Aaroniero Arruruerie",
     "Abirama Redder",
