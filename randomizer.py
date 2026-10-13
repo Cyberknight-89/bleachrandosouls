@@ -1,7 +1,7 @@
 ##################### note to future self ###########
 # the output prints an empty list idk why i think it might be because 
-#fixed the problem was the indentation in the while loop it excluded the if steatment as well as the else
 def randomizer():
+     import random
     #this code just take input from user and ask if he have a character keep going until 3/3
 
      while len(my_team) < 3 :
